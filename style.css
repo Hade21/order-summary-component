@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+body{
+    background-color: hsl(225, 100%, 94%);
+}
+.container-card{
+    margin: 50px auto;
+    text-align: center;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+.illustration{
+    width: 400px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 30px;
+}
+.title{
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: hsl(223, 47%, 23%);
+}
+.desc{
+    font-size: 16px;
+    padding: 0 30px;
+    margin-bottom: 25px;
+    color: hsl(224, 23%, 55%);
+
+}
+.subscribe-plan{
+    background-color: hsl(225, 100%, 98%);
+    padding: 15px 0;
+    border-radius: 10px;
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    margin-bottom: 25px;
+}
+.music{
+    display: grid;
+    grid-area: 1 / 1 / 3 / 2;
+    justify-self: center;
+}
+.pricename{
+    display: grid;
+    grid-area: 1 / 2 / 2 / 4;
+    text-align: left;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+
+}
+.price{
+    display: grid;
+    grid-area: 2 / 2 / 3 / 4;
+    text-align: left;
+    color: hsl(224, 23%, 55%);
+
+}
+.change{
+    display: grid;
+    grid-area: 1 / 4 / 3 / 5;
+    align-self: center;
+    font-weight: 700;
+    justify-self: center;
+    color: hsl(245, 75%, 52%);
+}
+.order{
+    background-color: hsl(245, 75%, 52%);
+    margin: 15px 40px;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: hsl(225, 100%, 98%);
+    box-shadow: 0 5px 25px hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+.cancel{
+    margin: 30px auto;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    width: fit-content;
+}
+.change:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    transition: .5s;
+}
+.order:hover{
+    opacity: 0.8;
+    transition: .3s ease;
+}
+.cancel:hover{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    transition: .3s;
+}
+
+@media (max-width: 375px) {
+    .illustration{
+        width: 300px;
+    }
+    .container-card{
+        width: 300px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .desc{
+        font-size: 14px;
+    }
+    .subscribe-plan{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .music{
+        width: 42px;
+    }
+    .pricename{
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    .price{
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    .change{
+        font-size: 14px;
+    }
+    .order{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .cancel{
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .attribution a{
+        font-size: 14px;
+    }
+    .attribution{
+        margin-bottom: 10px;
+    }
+}
